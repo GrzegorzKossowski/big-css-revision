@@ -34,12 +34,9 @@ Rozróżniamy następujące rodzaje selektorów
 
 ## Simple (select elements based on name, id, class)
 
-```html
-// odwołujący się wprost do elementu p { text-align: center; color: red; } //
-odwołujący się do atrybutu id tagu #para1 { text-align: center; color: red; } //
-odwołujący się do całej klasy obiektów .center { text-align: center; color: red;
-}
-```
+-   odwołujący się wprost do elementu `p { text-align: center; color: red; }`
+-   odwołujący się do atrybutu id tagu `#para1 { text-align: center; color: red; }`
+-   odwołujący się do całej klasy obiektów `.center { text-align: center; color: red;}`
 
 Element zawierający konretną klasę
 
@@ -113,23 +110,20 @@ Przykładowe pseudoklasy
 
 :first-child
 
-```html
-// zaznacza pierwsze dziecko obiektu, bez względu na atrybut p:first-child {
-color: blue; } // w każdym p zaznacz pierwszy i element p i:first-child { color:
-blue; }
-```
+-   zaznacza pierwsze dziecko obiektu, bez względu na atrybut `p:first-child { color: blue; }`
+-   w każdym p zaznacz pierwszy i element `p i:first-child { color: blue; }`
 
 :lang
 
-```html
-// pozwala na wybranie zasad dla wybranych języków //
-<span lang="pl">
-    będzie niebieski a
-    <span lang="no">
-        czerwony span:lang(no) { color: red; } span:lang(pl) { color: blue;
-        }</span
-    ></span
->
+-   pozwala na wybranie zasad dla wybranych języków `<span lang="pl">` będzie niebieski a `<span lang="no">` czerwony
+
+```css
+span:lang(pl) {
+    color: blue;
+}
+span:lang(no) {
+    color: red;
+}
 ```
 
 ### wykaz pseudoklas
