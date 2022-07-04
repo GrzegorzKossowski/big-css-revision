@@ -1,3 +1,5 @@
+<a href='../README.md' id='top' style='border: 1px solid gold; padding: 5px; color: gold'>← back to README.md</a>
+
 # Introduction
 
 -   css - język używany do stylowania dokumentów html
@@ -274,15 +276,132 @@ input[target="text"] {  background-color: yellow; }
 
 # How To
 
-TODO: https://www.w3schools.com/css/css_howto.asp
+Sposób zamieszczania styli wewnętrznych (inline)
 
-# Comments
+```html
+<h2 style="color: red;">Title</h2>
+```
+
+Sposób zamieszczania styli wewnętrznych (internal)
+
+```html
+<style>
+    h1 {
+        color: red;
+    }
+</style>
+```
+
+Sposób zamieszczania styli zewnętrznych
+
+```html
+<link rel="stylesheet" type="text/css" href="mystyle.css" />
+```
+
+Kolejność ważności styli:
+
+1. Inline (wewnątrz elementu)
+2. External i internal (w sekcji head) - decyduje kolejność umieszczenia
+3. Browser default
 
 # Colors
 
+Kolory można kodować w nas. formatach: `RGB`, `HEX`, `HSL`, `RGBA`, `HSLA`
+
+```html
+<h1 style="background-color:rgb(255, 99, 71);">...</h1>
+<h1 style="background-color:#ff6347;">...</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+```
+
+## RGB, RGBA
+
+`rgb(red, green, blue, alpha)`
+
+wartości zawierają się między 0 (czarny) a 255 (biały) - 32 bitowy kanał na każdy kolor, ~16+ milionów możliwości. Alpha od 0 (przezroczyste) do 1 (nieprzezroczyste)
+
+## HEX
+
+`#rrggbb`
+
+Zapis szesnastkowy tych samych wartości.
+
+## HSL, HSLA
+
+`hsl(hue, saturation, lightness)`
+
+`hsla(hue, saturation, lightness, alpha)`
+
+Wartości procentowe, gdzie hue to kąt na kole kolorów, saturation to nasycenie barwą, intensywność, a lightness to jasność koloru (białe-czarne).
+
+## inne
+
+Ponadto html wspiera ~140 nazw własnych predefiniowanych kolorów.
+
+## color props
+
+Właściwości ustawiające kolor:
+
+`backgroun-color` - kolor tła
+
+`color` - kolor tekstu
+
+`border-color` - kolor linii
+
 # Backgrounds
 
+`background-color` - color tła
+
+`background-image: url("paper.gif");` - obrazek jako tło
+
+`background-repeat` - czy ma być powtarzany
+
+```
+repeat	- powtarzany pionowo i poziomo
+
+repeat-x - powtarzany poziomo
+
+repeat-y - powtarzany pionowo
+
+no-repeat - nie jest powtarzany, pojawia się raz
+
+space - obrazek jest rozciągany (space-beetwen)
+
+round - obrazek jest rozciągany, by wypełnić przestrzeń (no gaps)
+```
+
+`background-attachment` - w jaki sposób obrazek ma być przypięty
+
+```
+scroll - obrazek przesuwa się ze stroną (default)
+
+fixed - obrazek nie przesuwa się ze stroną. Tło jest statyczne.
+
+local - przesuwa się z zawartością elementu
+
+
+initial - ustawia defaultową wartość.
+
+inherit - przejmuje właściwość od rodzica.
+```
+
+`background-position` - zakotwiczenie obrazu na dwóch współrzędnych.
+
+```
+left top, center, right, bottom - jeśli zostanie podana jedna, obrazek wycentruje.
+
+x% y% - procentowe określenie pozycji
+
+x y - określenie pozycji w jednostkach
+```
+
+`background: color image repeat attachment position` - skrót zawierający wszystkie wartości
+
 # Borders
+
+Pozwalają na ustawienie linii elementu.
+
+Linie mogą być różnego typu: `dotted`, `dashed`, `solid`, `inset`, `none`, `hidden`...
 
 # Margins
 
@@ -308,48 +427,5 @@ TODO: https://www.w3schools.com/css/css_howto.asp
 
 # Display
 
-# Max-width
-
-# Position
-
-# Z-index
-
-# Overflow
-
-# Float
-
-# Inline-block
-
-# Align
-
-# Combinators
-
-# Pseudo-class
-
-# Pseudo-element
-
-# Opacity
-
-# Navigation Bar
-
-# Dropdowns
-
-# Image Gallery
-
-# Image Sprites
-
-# Attr Selectors
-
-# Forms
-
-# Counters
-
-# Website Layout
-
-# Units
-
-# Specificity
-
-# !important
-
-# Math Functions
+<a href='../README.md' style='border: 1px solid gold; padding: 5px; color: gold'>← back to README.md</a>
+<a href='#top' style='border: 1px solid gold; padding: 5px; color: gold'>↑ back to top</a>
