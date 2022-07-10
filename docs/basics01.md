@@ -231,7 +231,7 @@ input[target="text"] {  background-color: yellow; }
 [atrybut~=”wartość”]
 
 ```
-// oznacza każdy element z atrybutem width o wartości 150
+// oznacza element z atrybutem width zawierający wartość 150
 [width~="150"] {   border: 5px solid yellow; }
 ```
 
